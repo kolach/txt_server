@@ -2,7 +2,7 @@ require File.expand_path '../spec_helper.rb', __FILE__
 
 describe TxtServer::App do
 
-  describe '/_search' do
+  describe 'POST to /_search' do
 
     before(:each) do
       @search_service = class_double('TxtServer::Search').as_stubbed_const(transfer_nested_constants: true)
