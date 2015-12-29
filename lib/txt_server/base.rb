@@ -16,11 +16,11 @@ module TxtServer
     # Run the following before every API request
     # JSON all the time
     before do
+      response.headers["Access-Control-Allow-Origin"] = "*"
       content_type :json
     end
 
     helpers do
-
       # encode json
       def json(json)
         MultiJson.dump(json, pretty: true)
@@ -36,7 +36,13 @@ module TxtServer
         bad_request("The request body you provide must be a JSON hash") unless parsed.is_a?(Hash)
         return parsed
       end
+    end
 
+    options "*" do
+      response.headers["Allow"] = "HEAD,GET,PUT,POST,DELETE,OPTIONS"
+      response.headers["Access-Control-Allow-Headers"] = "X-Requested-With, X-HTTP-Method-Override, Content-Type, Cache-Control, Accept"
+      response.headers["Access-Control-Allow-Credentials"] = "true"
+      200
     end
 
   end
