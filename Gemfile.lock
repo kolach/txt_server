@@ -1,0 +1,60 @@
+GIT
+  remote: https://317f77a8e877cd0cb5c8d0fc63e29ce398c85d85:x-oauth-basic@github.com/kolach/txt_search.git
+  revision: 82013ecec78e4c7fc8dca44be21d728d43e0c007
+  specs:
+    txt_search (0.2.0)
+      treetop (~> 1.6)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ZenTest (4.11.0)
+    autotest (4.4.6)
+      ZenTest (>= 4.4.1)
+    diff-lcs (1.2.5)
+    multi_json (1.11.2)
+    polyglot (0.3.5)
+    rack (1.6.4)
+    rack-protection (1.5.3)
+      rack
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rake (10.4.2)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-autotest (1.0.0)
+      rspec-core (>= 2.99.0.beta1, < 4.0.0)
+    rspec-core (3.4.1)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
+    sinatra (1.4.6)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    tilt (2.0.1)
+    treetop (1.6.3)
+      polyglot (~> 0.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  autotest
+  multi_json
+  rack-test
+  rake
+  rspec
+  rspec-autotest
+  sinatra
+  txt_search!
+
+BUNDLED WITH
+   1.11.2
