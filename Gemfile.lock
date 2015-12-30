@@ -1,6 +1,6 @@
 GIT
   remote: https://317f77a8e877cd0cb5c8d0fc63e29ce398c85d85:x-oauth-basic@github.com/kolach/txt_search.git
-  revision: 82013ecec78e4c7fc8dca44be21d728d43e0c007
+  revision: 47123438b97e5e5e00b544baa71504e0afb2a26c
   specs:
     txt_search (0.2.0)
       treetop (~> 1.6)
